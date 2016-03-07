@@ -4,7 +4,13 @@ var $date = $('.date'),
 	$min  = $hand.find('.min'),
 	$sec  = $hand.find('.sec');
 
+setTimeout(function(){ 
+	$(".watch-body-img").fadeIn(200);
+	$(".surface").fadeIn(100);
+}, 1000);
+
 $(window).load(function(){
+
 	function writeTime(){
 		setTimeout(function () {
 			var _time = new Date(),
